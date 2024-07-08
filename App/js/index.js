@@ -26,7 +26,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("23.61904761904762em")
                 .setTop("9.904761904761905em")
                 .setCaption("Button")
-                .onContextmenu([
+                .onClick([
                     {
                         "desc" : "Action 1",
                         "type" : "other",
