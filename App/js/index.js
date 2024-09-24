@@ -23,15 +23,6 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.Timer")
                 .setHost(host,"xui_timer1")
-                .onEnd([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "control",
-                        "target" : "xui_ui_dialog5",
-                        "args" : [ ],
-                        "method" : "hide"
-                    }
-                ])
             );
             
             append(
@@ -70,26 +61,6 @@ xui.Class('App', 'xui.Module',{
                     "target" : "xui_ui_dialog5",
                     "args" : [ ],
                     "method" : "show"
-                },
-                {
-                    "desc" : "Action 2",
-                    "type" : "control",
-                    "target" : "xui_timer1",
-                    "args" : [
-                        {
-                            "interval" : 3000
-                        },
-                        {
-                        }
-                    ],
-                    "method" : "setProperties"
-                },
-                {
-                    "desc" : "Action 3",
-                    "type" : "control",
-                    "target" : "xui_timer1",
-                    "args" : [ ],
-                    "method" : "start"
                 }
             ]
         }
